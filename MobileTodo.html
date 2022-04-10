@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mobile Todo</title>
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <link rel="stylesheet" href="MobileTodo.css" />
+    <link rel="stylesheet" href="/secondtodo.html" />
+    <link
+      rel="stylesheet"
+      href="/ICONS--FONT    (icofont--iconname)/icofont.min.css"
+    />
+  </head>
+  <body>
+    <div class="nav">
+      <nav class="navbar navbar-dark fixed-top text-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">TODO</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-start"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header navbar-primary text-light">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">TODO</h5>
+           <div class="close">
+             <a href="#">
+                <button
+                id="close"
+                type="button"
+                class="btn-close text-reset close text-white"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+           </a>
+           </div>
+            </div>
+            <div class="offcanvas-body bar">
+              <div class=" text-center">
+                  <img class="myimage" src="/robot_PNG79.png" alt=" Img">
+              </div>
+     
+              <ul
+                class="navbar-nav text-dark justify-content-start flex-grow-1 pe-3"
+              >
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#Home"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#Addme">Add Todo</a>
+                </li>
+               <h3 class="text-light text-center my-4">Link not Functioning</h3>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="main">
+      <!-- <h1 class="text-center text-light my-4">My Todo</h1> -->
+
+      <div class="container">
+        <header class="my-4 text-center text-light">
+          <h1 class="mb-4">ORGANIZE YOUR DAY!</h1>
+        </header>
+
+        <!-- ENTER -->
+        <form action="" class="add my-4 text-center">
+          <label for="" class="text-light my-4">List your Task.</label>
+          <input
+            type="text"
+            name="add"
+            class="form-control m-auto"
+            id="add"
+            placeholder="Add task..."
+          />
+          <!-- <button type="submit" value="">&#8594</button> -->
+        </form>
+          <!-- <i class="icofont-trash delete"></i> -->
+
+
+
+        <ul class="list-group todos mx-auto" id="Todoss">
+          <!-- CONTENT WILL BE HERE -->
+        </ul>
+        <label for="add" class="btn btn-light addbtn my-4">+</label>
+      </div>
+    </div>
+
+  
+
+    <script src="/bootstrap.min.js"></script>
+    <script src="/jquery.min.js"></script>
+    <script src="/main.js"></script>
+    <script src="/todo.js"></script>
+  </body>
+</html>
